@@ -5,7 +5,7 @@ The project is to use a probabilistic classifier and logic to navigate towards a
 ![](Images/pipeline_ssy236_final_project.png)
 
 </p> 
-[Watch the video(https://img.youtube.com/vi/jShlLz6bswQ/maxresdefault.jpg)](https://youtu.be/jShlLz6bswQ)   
+Watch the demonstration video： https://youtu.be/jShlLz6bswQ
 </p>
 ----- You can click on the image directly to jump to the video interface.
 
