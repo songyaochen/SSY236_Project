@@ -3,6 +3,7 @@
 The project is to use a probabilistic classifier and logic to navigate towards an object and find them. The expected pipeline is shown in the image below:
 
 ![](Images/pipeline_ssy236_final_project.png)
+[![Watch the video](https://img.youtube.com/vi/jShlLz6bswQ/maxresdefault.jpg)](https://youtu.be/jShlLz6bswQ)
 
 
 1. The robot recieves an object that the user wishes it would find.
