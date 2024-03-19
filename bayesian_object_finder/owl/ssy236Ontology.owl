@@ -1,0 +1,3605 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.chalmers.se/ontologies/ssy236Ontology.owl#"
+     xml:base="http://www.chalmers.se/ontologies/ssy236Ontology.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2007-2011 by
+          Chalmers University of Technology. This work is licensed under
+          CreativeCommons Attribution 3.0, so you are granted to use, copy,
+          distribute, transmit and adapt this work, but you must attribute
+          the work to the original authors.
+
+          Parts of this ontology are based on the OpenCyc ontology. The OpenCyc
+          OWL Ontologies are Copyright © 2001-2009 Cycorp, Inc., Austin, TX,
+          USA. All rights reserved.
+
+          These files contain an OWL representation of information contained
+          in the OpenCyc Knowledge Base. The content of these OWL files are
+          licensed under the Creative Commons Attribution 3.0 license. The
+          content of these OWL files, including the OpenCyc content they
+          represent, constitutes the &quot;Work&quot; referred to in the
+          Creative Commons license. The terms of this license equally apply
+          to, without limitation, renamings and other logically equivalent
+          reformulations of the content of these OWL files (or portions
+          thereof) in any natural or formal language, as well as to derivations
+          of this content or inclusion of it in other ontologies.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#abstractProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#abstractProperties">
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This represent general properties that most object should have to describe objects in an abstract form.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#after">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalProperties"/>
+        <owl:inverseOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#before"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#before">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalProperties"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tomato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#describedInMap -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#describedInMap">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#spatialProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Environment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#endTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#endTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TemporalThing"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#firstActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#firstActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalEvents"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#firstSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#firstSkill">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalEvents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#fromLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#fromLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#spatialProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementRotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasCriteria -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasCriteria">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalEvents"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasHandState -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasHandState">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#abstractProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasMotion -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasMotion">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#abstractProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasSkill">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#abstractProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PurposefulAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#isSqueezable -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#isSqueezable">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#abstractProperties"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrink"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CitrusFruit"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tomato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextEvent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HumanActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#postEvents"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextSkill">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#nextEvent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PurposefulAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#objectActedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#objectActedOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#abstractProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#objectInHand -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#objectInHand">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#abstractProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#objectSeen -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#objectSeen">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#abstractProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#postEvents -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#postEvents">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalEvents"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#preEvents -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#preEvents">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalEvents"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#previousActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#previousActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#previousEvent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HumanActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#previousEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#previousEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#preEvents"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#previousTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#previousTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#previousEvent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PurposefulAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#spatialProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#spatialProperties">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#startTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#startTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TemporalThing"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial time when something was perceived</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalEvents -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalEvents">
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#temporalProperties">
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TemporalThing"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TemporalThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#toLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#toLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#spatialProperties"/>
+        <rdfs:domain rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent"/>
+        <rdfs:range rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementRotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_i0 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_i0">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_i1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_i1">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_i2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_i2">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_i3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_i3">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_m0 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_m0">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_m1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_m1">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_m2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_m2">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_m3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_m3">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_r0 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_r0">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_r1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_r1">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_r2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_r2">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_r3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_r3">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_t0 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_t0">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_t1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_t1">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_t2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_t2">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_t3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LH_t3">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_i0 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_i0">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_i1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_i1">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_i2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_i2">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_i3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_i3">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_m0 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_m0">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_m1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_m1">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_m2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_m2">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_m3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_m3">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_r0 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_r0">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_r1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_r1">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_r2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_r2">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_r3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_r3">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_t0 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_t0">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_t1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_t1">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_t2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_t2">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_t3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RH_t3">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#activityData -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#activityData"/>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#arm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#arm">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasJointPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#base -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#base">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasJointPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#constraintProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#constraintProperties"/>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hand">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasJointPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasCartesianPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasCartesianPosition">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#constraintProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasJointPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasJointPosition">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#constraintProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#taskData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasObjectGoal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasObjectGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#skillData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasObjectSpecifics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasObjectSpecifics">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#skillData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasSqueezeRatio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasSqueezeRatio">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#skillData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasVelocity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasVelocity">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#constraintProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasWrench -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasWrench">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#skillData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexL">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#leftHand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#indexR">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#rightHand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#keepOrientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#keepOrientation">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#constraintProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#leftArm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#leftArm">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#arm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#leftHand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#leftHand">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m00 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m00">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m01 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m01">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m02 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m02">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m03 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m03">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m10 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m10">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m11 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m11">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m12 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m12">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m13 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m13">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m20 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m20">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m21 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m21">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m22 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m22">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m23 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m23">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m30 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m30">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m31 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m31">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m32 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m32">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#m33 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#m33">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#matrixElement">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleL">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#leftHand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#middleR">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#rightHand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#objectID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#objectID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#rightArm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#rightArm">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#arm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#rightHand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#rightHand">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringL">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#leftHand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ringR">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#rightHand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#skillData -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#skillData"/>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#taskData -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#taskData"/>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbL">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#leftHand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#thumbR">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#rightHand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#x -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#x">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasCartesianPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#xAxis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#xAxis">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#keepOrientation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#xDot -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#xDot">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasVelocity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#y">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasCartesianPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#yAxis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#yAxis">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#keepOrientation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#yDot -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#yDot">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasVelocity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#z -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#z">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasCartesianPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#zAxis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#zAxis">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#keepOrientation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#zDot -->
+
+    <owl:DatatypeProperty rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#zDot">
+        <rdfs:subPropertyOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasVelocity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Action -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Action">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The collection of Events (q.v.) that are carried out by some &quot;doer&quot; (see doneBy). Instances of Action include any event in which one or more actors effect some change in the (tangible or intangible) state of the world, typically by an expenditure of effort or energy. Note that it is not required that any tangible object be moved, changed, produced, or destroyed for an action to occur;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#AlcoholicBeverage -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AlcoholicBeverage">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#AngularAccelerationEvent -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AngularAccelerationEvent">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementRotation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of AngularAccelerationEvent is an event in which the primaryObjectMoving has a positive angular acceleration.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#AnimalBodyPart -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AnimalBodyPart">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Apple -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Apple">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Artifact -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Assembling -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Assembling">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingSomething"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of events. In each Assembling event, physical objects are combined by fastening them together in some way to produce a new object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#AssemblingFoodIngredients -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AssemblingFoodIngredients">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoodItem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Avocado -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Avocado">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Banana -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Banana">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Basket -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Basket">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Beef -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Beef">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Beer -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Beer">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AlcoholicBeverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#BindingEvent -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#BindingEvent">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Assembling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Block -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Block">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PlasticMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#BookRack -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#BookRack">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Furniture"/>
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Bottom_wood -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Bottom_wood">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Bowl -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Bowl">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EatingVessel"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Plate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Box -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Box">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Bread -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Bread">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Broom -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Broom">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#GardeningTool"/>
+        <rdfs:comment>Wikipedia definition: A broom is a cleaning tool consisting of usually stiff fibers (often made of materials such as plastic, hair, or corn husks) attached to, and roughly parallel to, a cylindrical handle, the broomstick. It is thus a variety of brush with a long handle. It is commonly used in combination with a dustpan.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Brush -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Brush">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ManualTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Butter -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Butter">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DairyProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ButterKnife -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ButterKnife">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Knife"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cabinet -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cabinet">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Furniture"/>
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CabinetHandle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CabinetHandle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CakeMix -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CakeMix">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MixForBakedGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Can -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Can">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Carpet -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Carpet">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Carrot -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Carrot">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Categorizing -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Categorizing">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Task"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym of sorting</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cereal -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cereal">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Food"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Each instance of CerealFood is food that consists of a significant amount of grain products, such as breads and cereals. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chair -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chair">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cheese -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cheese">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DairyProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chicken -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chicken">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ChilliPepper -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ChilliPepper">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pepper"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SweetPepper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chocolate -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HotBeverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chopstick -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chopstick">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodUtensil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CitrusFruit -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CitrusFruit">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The collection of individual citrus fruits.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningCloth -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningCloth">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningDevice -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningDevice">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningSubstance -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningSubstance">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningTool -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningTool">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Close -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Close">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CocoaPowder -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CocoaPowder">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Powder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Coffee -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Coffee">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HotBeverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Coke -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Coke">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Condiment -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Condiment">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodIngredientOnly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Configuration -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Configuration">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StaticSituation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of Configuration is a static situation consisting of two or more PartiallyTangible things of certain types standing in a certain type of spatial relationship (or set of relationships). This (set of) spatial relationship(s) &quot;characterizes&quot; the Configuration&apos;s type in the sense that any group of objects of the appropriate types standing in that relationship (or those relationships) correspond to a Configuration of that type; and each of these objects, in turn, is said to be &quot;configured&quot; (see configuredObjects) in the (individual) Configuration.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ConstrainedRotation -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ConstrainedRotation">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementRotation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movement_Rotation constrained by physical contact with a solid or liquid external object along an external or internal boundary of the rotating object. Physical contact between the rotating body and the external object continues during the rotation, although pairs of points of the two objects in contact may change. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Container -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Container">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleStuff"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The collection of tangible objects whose primary function is to contain something. Note that just about anything can serve as a container without actually being a container</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContainerArtifact -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContainerArtifact">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Container"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of ContainerArtifact is an object whose primary function (or one of whose main functions) is to be a container. Instances of ContainerArtifact include storage containers for books, office records, food, clothing, tools, and materials; containers for transporting the same; passenger compartments of various kinds of vehicles; and artificial constructs for housing humans and animals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContinuousTimeInterval -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContinuousTimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimeInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookieJar -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookieJar">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodStorageContainer"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#JarStorage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cooking -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cooking">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoodItem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingUtensil -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingUtensil">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodUtensil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingVessel -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingVessel">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cracker -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cracker">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Crawling -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Crawling">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PostureConfiguration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cream -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cream">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DairyProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CreationEvent -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CreationEvent">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CreationOrDestructionEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CreationOrDestructionEvent -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CreationOrDestructionEvent">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EventLocalized"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialization of Event_Localized. During each instance of CreationOrDestructionEvent, one or more instances of SomethingExisting (q.v.) come into or go out of existence. Specializations of this collection include CreationEvent, DestructionEvent, Manufacturing, MakingSomething, and KillingByOrganism.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cuisine -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cuisine">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleStuff"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrinkOrIngredient"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The collection of types of EdibleStuff that are commonly associated with a region, ethnic group, culture, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cup -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cup">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cupboard -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cupboard">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Furniture"/>
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CupboardHandle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CupboardHandle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CupboardTop -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CupboardTop">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cupboard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cutlery -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cutlery">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodUtensil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#CuttingBoard -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CuttingBoard">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodUtensil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cylinder -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cylinder">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ThingTypeShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DairyProduct -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DairyProduct">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Food"/>
+        <rdfs:comment>Each instance of DairyProduct is a foodstuff that is milk or processed milk.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Date -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Date">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContinuousTimeInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DeepFrier -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DeepFrier">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DestructionEvent -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DestructionEvent">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CreationOrDestructionEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DishRack -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DishRack">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DishSoap -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DishSoap">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningSubstance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Dishwasher -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Dishwasher">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#WhiteGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DishwasherHandle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DishwasherHandle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Door -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Door">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SupportingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drawer -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drawer">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrawerHandle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrawerHandle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drill -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drill">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HardwareTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drink -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drink">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrink"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of Drink is a portion of a liquid of a type that is ingestible and commonly consumed by humans or animals. Instances of Drink, unlike instances of Food (q.v.), are ingested by drinking without chewing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingBottle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingBottle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingGlass -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingGlass">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingVessel -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingVessel">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#EatingVessel -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EatingVessel">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FruitOrVegetableFood"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vegetable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The collection of individual edible fruits, often eaten whole by people or used in cooking. Note that this is the common-sense notion of fruit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleStuff -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleStuff">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each specialization of EdibleStuff (Comestible) is a type of partially tangible stuff which all normal instances of some specialization of Organism_Whole can consume and successfully metabolize a significant portion of any instance of, with or without resulting harm to themselves. This collection includes virtually all animal and vegetable matter, as well as salts, potable water, and instances of OralDrug.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ElapsedTime -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ElapsedTime">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimeInterval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sub-collection of TimeInterval. Each instance is the time that elapses while some event is occurring.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Elbow -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Elbow">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AnimalBodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ElbowLeft -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ElbowLeft">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Elbow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ElbowRight -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ElbowRight">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Elbow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Environment -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Situation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Each instance of Event is a dynamic situation in which the state of the world changes; each instance is something one would say &quot;happens&quot;. Events are intangible because they are changes per se, not tangible objects that effect and undergo changes.
+Notable specializations of Event include Event_Localized, PhysicalEvent, Action, and GeneralizedTransfer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#EventLocalized -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EventLocalized">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Event"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event_Localized is the collection of all events that occur at a specific location in space.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Fish -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Fish">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Food -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Food">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrink"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of Food is a particular portion of food of a type which can be, and habitually is, eaten by humans or other animals. Here the notion of eating is important; eating an instance of Food will generally require biting or chewing, but if placed into the mouth (e.g. with a utensil) in a manner not considered to be drinking, it is still considered eating. Thus, edible stuff normally taken in via drinking, inhalation, or osmosis is excluded from this collection.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodIngredientOnly -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodIngredientOnly">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrinkOrIngredient"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrink"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of FoodIngredientOnly is an edible substance that is used in making other food but isn&apos;t eaten by itself. Instances of FoodIngredientOnly may or may not require some preparation. For example, TableSalt, VegetableOil, and Ketchup are specializations of FoodIngredientOnly, since all of their instances are used only as ingredients or condiments.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrink -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrink">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrinkOrIngredient"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of FoodOrDrink is a substance which instances of some type of organism normally consume a significant part of. Important specializations of FoodOrDrink include Food (instances of which require chewing in order to be consumed) and Drink (instances of which are liquids that can be consumed without chewing).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrinkOrIngredient -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodOrDrinkOrIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleStuff"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The collection of all food, drink and ingredients.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodStorageContainer -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodStorageContainer">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodUtensil -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodUtensil">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ManualTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodVessel -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodVessel">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContainerArtifact"/>
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodUtensil"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of FoodVessel is a portable container designed for holding, storing, or preparing food or drink. Specializations of FoodVessel include the collections CookingVessel, EatingVessel, and FoodStorageContainer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Fork -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Fork">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cutlery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Freezer -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Freezer">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RefrigeratedStorageDevice"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Refrigerator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#FridgeHandle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FridgeHandle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#FruitOrVegetableFood -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FruitOrVegetableFood">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Food"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#hasSqueezeRatio"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>All the instances of the class FruitorVegetableFood, have the data property &quot;hasSqueezeRatio&quot;</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of FruitOrVegetableFood is a fruit or a vegetable.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Furniture -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#GardeningTool -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#GardeningTool">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tool"/>
+        <rdfs:comment>Definition from wikipedia: A sponge is a tool or cleaning aid consisting of porous material. Sponges are usually used for cleaning impervious surfaces. They are especially good at absorbing water and water-based solutions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#GermanFood -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#GermanFood">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#GrapeFruit -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#GrapeFruit">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CitrusFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Hand -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Hand">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AnimalBodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandState -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandState">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalPartOfObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandlingADevice -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandlingADevice">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandlingAnObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandlingAnObject -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandlingAnObject">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SensoryEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of HandlingAnObject is an event in which an object (see SomethingExisting) is touched and manipulated by some Agent_PartiallyTangible. Specializations of this collection include ManipulatingWithFingers and HandlingADevice (qq.v.).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#HardwareTool -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HardwareTool">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Hearing -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Hearing">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Perceiving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#HeatedTool -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HeatedTool">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#HomeAppliance -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HomeAppliance">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#HomogeneousTransformation -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HomogeneousTransformation">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationTranslationCombined"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#HotBeverage -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HotBeverage">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#HumanActivity -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HumanActivity">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#IntelligentAgentActivity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of HumanActivity is a spatially-localized action each of whose &quot;doers&quot; (see doneBy) is either a HomoSapiens or a group of humans.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#IceCream -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#IceCream">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DairyProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Inspecting -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Inspecting">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#IntelligentAgentActivity -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#IntelligentAgentActivity">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Action"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialization of Action (q.v.). Every instance of IntelligentAgentActivity is an action, each of whose &quot;doers&quot; (see doneBy and animateDoers) is either an IntelligentAgent or a group of such agents (i.e. a Group all of whose members are intelligent agents). Specializations of this collection include HumanActivity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Iron -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Iron">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HeatedTool"/>
+        <rdfs:comment>Wikipedia definition: A clothes iron, also called a flatiron or simply an iron, is a small appliance: a handheld piece of equipment with a flat, roughly triangular surface that, when heated, is used to press clothes to remove creases. It is named for the metal of which the device is commonly made, and the use of it is generally called ironing. Ironing is the use of a heated tool (an iron) to remove wrinkles from fabric.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#JarStorage -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#JarStorage">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodStorageContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Juice -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Juice">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Ketchup -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Ketchup">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Knife -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Knife">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cutlery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Labeling -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Labeling">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Assembling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lamb -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lamb">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lamp -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lamp">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LegumeSeed -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LegumeSeed">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MeatOrLegumeFood"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lemon -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lemon">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CitrusFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lentil -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lentil">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LegumeSeed"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Peanut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LifeTime -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LifeTime">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContinuousTimeInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lime -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lime">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CitrusFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LineNoPlanar -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LineNoPlanar">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ThingTypeShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#LinePlanar -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LinePlanar">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ThingTypeShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingAPancake -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingAPancake">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoodItem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingASandwich -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingASandwich">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoodItem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingJuice -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingJuice">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingABeverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingSomething -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingSomething">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CreationEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Task"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of creation events. Each instance of this collection involves some PartiallyTangible thing being made (by some Agent_PartiallyTangible) from raw materials or from parts. The end result (see productsCreated) might or might not be a Product or even a completed artifact (it could be an intermediate form, or a component of a completed artifact).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingTea -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingTea">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingABeverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Mango -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Mango">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ManipulatingWithFingers -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ManipulatingWithFingers">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandlingAnObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ManualTool -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ManualTool">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tool"/>
+        <rdfs:comment>Each instance of HandTool is a portable tool which is hand-held, hand-supported and hand-guided throughout its operation. Typically the work piece (the object being acted on when the tool is used) remains stationary.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Mayonnaise -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Mayonnaise">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Meat -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Meat">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MeatOrLegumeFood"/>
+        <rdfs:comment> Each instance of Meat is some piece of animal flesh (usually a piece of skeletal muscle tissue, possibly combined with fat) that is edible. For this reason &quot;Fish&quot; is considered meat.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MeatOrLegumeFood -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MeatOrLegumeFood">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Food"/>
+        <rdfs:comment>The food group consisting of meats and legumes. It is characterized by being high in protein. Food that contains a significant amount of meat and legumes should be specs of this.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MetallicMaterial -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MetallicMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MexicanFood -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MexicanFood">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Microwave -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Microwave">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#WhiteGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MicrowaveHandle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MicrowaveHandle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Milk -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Milk">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DairyProduct"/>
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MilkPowder -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MilkPowder">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Powder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MixForBakedGoods -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MixForBakedGoods">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodIngredientOnly"/>
+        <rdfs:comment>This is the collection of commercially produced mixes for baked goods. This includes cake mixes, mixes for pancakes, biscuits, muffins etc. Cake mixes are the most prominent type of mix for baked goods.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Motion -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Motion">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Move -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Move">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> This is the most general collection of physical movements. Each instance of MovementEvent is an event in which at least one object (see objectMoving) either translates some distance or moves from one rotational orientation to another, relative to a frame of reference that is not part of the translating/rotating object. The movement in question might be periodic or not, continuous or not. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementRotation -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementRotation">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Mustard -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Mustard">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Noodle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Noodle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#NotMove -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#NotMove">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Onion -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Onion">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Open -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Open">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HandState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Orange -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Orange">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CitrusFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#OrganicMaterial -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#OrganicMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Packing -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Packing">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Assembling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pan -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pan">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingUtensil"/>
+        <rdfs:comment>similar as cooking utensil or cookware</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pancake -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pancake">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PancakeMaker -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PancakeMaker">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PancakeMix -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PancakeMix">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MixForBakedGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Paprika -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Paprika">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pepper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Peanut -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Peanut">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#LegumeSeed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pear -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pear">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PeelerDevice -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PeelerDevice">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingUtensil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pepper -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pepper">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vegetable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peppers are botanically fruits, but are generally considered in culinary contexts to be vegetables.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PepperCondiment -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PepperCondiment">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Perceiving -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Perceiving">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SensoryEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of Perceiving is an event in which an agent (an instance of PerceptualAgent) acquires information through the exercise of its senses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalDevice -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalDevice">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Artifact"/>
+        <rdfs:comment> Each instance of PhysicalDevice is an artifact with a relatively rigid, set shape, designed for a specific use or to perform a specific function. Specializations of PhysicalDevice thus include (among others) RoadVehicle, Motorboat, HandTool, and PlumbingFixture. Artifacts which have a specific use or function, but which do not have a relatively rigid, set shape are not instances of PhysicalDevice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalEvent -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalEvent">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EventLocalized"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalPartOfObject -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalPartOfObject">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pineapple -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pineapple">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Place -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Place">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PlasticMaterial -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PlasticMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Plate -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Plate">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EatingVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Popcorn -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Popcorn">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pork -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pork">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PostureConfiguration -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PostureConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Configuration"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Each instance of Posture_Configuration is a Situation that consists of the body of an Animal being in a certain configuration or orientation (e.g., crouching or lying prone).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pot -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pot">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Potato -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Potato">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Powder -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Powder">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodIngredientOnly"/>
+        <rdfs:comment>Instances of Powder are composed of many fine particles and are FluidTangibleThing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingABeverage -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingABeverage">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoorOrDrink"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making a batch of something drinkable</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingAMeal -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingAMeal">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoorOrDrink"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An event in which a meal is made. Since meals (which include snacks, cf Meal) can be made of merely a beverage, or merely a food, or several of both, PreparingAMeal has subEvents which can be either PreparingFood or PreparingABeverage.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoodItem -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoodItem">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoorOrDrink"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Each instance of PreparingFoodItem is an event in which a single item of Food is prepared to make it ready to eat. For example, instances of MakingToast, roasting a turkey, or BakingBread.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoorOrDrink -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PreparingFoorOrDrink">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MakingSomething"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of PreparingFoodOrDrink is an event in which an instance of FoodOrDrink is created. An instance of PreparingFoodOrDrink may be an event in which preparation is done `from scratch&apos;, using raw ingredients, or it may be an event in which semi-prepared or `convenience&apos; products (such as cake mixes, margarita mixes, or frozen foods) are used.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Process -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Process">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#PurposefulAction -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PurposefulAction">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Action"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of PurposefulAction is an action consciously, volitionally, and purposefully done by (see performedBy) at least one actor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RefrigeratedStorageDevice -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RefrigeratedStorageDevice">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#WhiteGoods"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The collection of electrical devices whose purpose is to maintain something at a lower temperature than the surroundings through refrigeration (usually through the compression/decompression of a gas).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Refrigerator -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Refrigerator">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RefrigeratedStorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Rice -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Rice">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationMatrix -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationMatrix">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementRotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationMatrix2D -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationMatrix2D">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationMatrix"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationMatrix3D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationMatrix3D -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationMatrix3D">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationTranslationCombined -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RotationTranslationCombined">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MovementRotation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Combined translational and rotational movement</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RoundObject -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RoundObject">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ThingTypeShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#RussianFood -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RussianFood">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Salt -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Salt">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Screw -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Screw">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MetallicMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#SemanticEnvironmentMap -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SemanticEnvironmentMap">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#SensoryEvent -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SensoryEvent">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CreationEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of events. Each element of SensoryEvent is an event which elicits a direct sensory response from either its performer or its objectActedOn, when those predicates link the event to an instance of PerceptualAgent. Examples include the elements of VoluntaryBodyMovement (such as leg and arm movements), PhysicalContactEvent (such as touches), HumidityPerception, TemperatureChangingProcess, etc., when there is a PerceptualAgent linked to those events in the appropriate way.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Shelf -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Shelf">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MetallicMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ShelfTop -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ShelfTop">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Shelf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Sitting -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Sitting">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PostureConfiguration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Situation -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Situation">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TemporalThing"/>
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimeInterval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Each instance of Situation is a state or event consisting of one or more objects having certain properties or bearing certain relations to each other. Notable specializations of Situation are Event and StaticSituation; it is disjoint with SomethingExisting.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Skill -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Skill">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing">
+        <owl:disjointWith rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TemporalThing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialization of Individual. The collection of all things that have a spatial extent or location relative to some other SpatialThing or in some embedding space. Note that to say that an entity is a member of this collection is to remain agnostic about two issues. First, a SpatialThing may be PartiallyTangible (e.g. Texas_State) or wholly Intangible (e.g. ArcticCircle or a line mentioned in a geometric theorem). Second, although we do insist on location relative to another spatial thing or in some embedding space, a SpatialThing might or might not be located in the actual physical universe. It is far from clear that all SpatialThings are so located: an ideal platonic circle or a trajectory through the phase space of some physical system (e.g.) might not be.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Spatula -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Spatula">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingUtensil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpheroidalSurface -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpheroidalSurface">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ThingTypeShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Sponge -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Sponge">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CleaningTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Spoon -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Spoon">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cutlery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Square -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Square">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ThingTypeShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#SqueezableFruit -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SqueezableFruit">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FruitOrVegetableFood"/>
+        <rdfs:comment>This class will contain all the inividuals whose squeezable threshold is higher than 3.5 (This value needs to be adjusted later).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#StaticSituation -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StaticSituation">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Situation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of StaticSituation is a state of affairs between two or more things, persisting statically over some time interval. Instances of StaticSituation always have a temporal extent, and they usually have a tangible and spatial extent.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#SteakKnife -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SteakKnife">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Knife"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContainerArtifact"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of StorageConstruct is a container used primarily for storing something and includes such things as closets, trunks of cars, and attics. Negative examples would be Sink, Sandbox, and SewerLine, since their primary purpose is something other than storing something.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#SupportingStructure -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SupportingStructure">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#SweetPepper -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SweetPepper">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pepper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Table -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Table">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#TableKnife -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TableKnife">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Knife"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tap -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tap">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalDevice"/>
+        <rdfs:comment>Tap or faucet from the sinks or bathtubs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#TapHandle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TapHandle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Task -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Task">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PurposefulAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tea -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tea">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HotBeverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#TemporalThing -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TemporalThing">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialization of Individual. This is the collection of all things that have temporal extent or location -- things about which one might sensibly ask &quot;When?&quot;. TemporalThing thus contains many kinds of things, including events, physical objects, agreements, and pure intervals of time. Major specializations of this collection are SomethingExisting, Situation, and TimeInterval (qq.v.).
+Things that are timeless -- such as mathematical sets, Collections, and numbers -- are of course not instances of TemporalThing</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ThingTypeShape -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ThingTypeShape">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SpatialThing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of SpatialThingTypeByShape is a subcollection of SpatialThing (q.v.) whose own instances are all and only those things, either tangible or intangible, that have some particular thing in common as regards their shape.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimeInterval -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TemporalThing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of TimeInterval is an intangible temporal thing that is characterized fully by its temporal extent.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimeOfDay -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimeOfDay">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContinuousTimeInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TimePoint">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContinuousTimeInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tomato -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tomato">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EdibleFruit"/>
+        <rdfs:comment>The collection of all tomatoes. A type of Fruit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tool -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tool">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PhysicalDevice"/>
+        <rdfs:comment>Each instance of Tool is a device that is used by people to manipulate or alter other objects or the immediate environment in some way. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#ToolUse -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ToolUse">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Top_wood -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Top_wood">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#TouchPerception -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TouchPerception">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Perceiving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#TrashContainer -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TrashContainer">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#StorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tray -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tray">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContainerArtifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#VacuumCleaner -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#VacuumCleaner">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#WhiteGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#VacuumCleanerHead -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#VacuumCleanerHead">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#VacuumCleaner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vase -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vase">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vessel"/>
+        <rdfs:comment>vase (an open jar of glass or porcelain used as an ornament or to hold flowers)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vegetable -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vegetable">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FruitOrVegetableFood"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of Vegetable_Food is a foodstuff which is derived from a plant and is ordinarily considered a vegetable; e.g., a carrot (an instance of Carrot_Foodstuff), a potato (an instance of Potato_Foodstuff), a lima bean (an instance of Bean_Foodstuff), or a tomato (an instance of Tomato_Foodstuff). Note that Vegetable_Food includes certain plant parts, such as tomatoes, that are technically classified as fruits by botanists, but which are treated as vegetables in food classification.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vessel -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Vessel">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ContainerArtifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#VisualPerception -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#VisualPerception">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Perceiving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Water -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Water">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#WearingSomething -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#WearingSomething">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Configuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wedge -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wedge">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#ThingTypeShape"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Each instance of Wedge is a polyhedron with five sides, two of which are (parallel, congruent) triangles and three of which are rectangles; any cross-section of a wedge parallel to its two triangular ends is a triangle congruent to those ends.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#WhiteGoods -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#WhiteGoods">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HomeAppliance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Window -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Window">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#SupportingStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#WindowHandle -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#WindowHandle">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Handle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wine -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wine">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AlcoholicBeverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#WineGlass -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#WineGlass">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingVessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wood -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wood">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#OrganicMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wooden_cube -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wooden_cube">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Wood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#Yogurt -->
+
+    <owl:Class rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Yogurt">
+        <rdfs:subClassOf rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DairyProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#orange_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#orange_1">
+        <rdf:type rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Orange"/>
+        <hasSqueezeRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</hasSqueezeRatio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#orange_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#orange_2">
+        <rdf:type rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Orange"/>
+        <hasSqueezeRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</hasSqueezeRatio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.chalmers.se/ontologies/ssy236Ontology.owl#tomato_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#tomato_2">
+        <rdf:type rdf:resource="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tomato"/>
+        <hasSqueezeRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</hasSqueezeRatio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AlcoholicBeverage"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Butter"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cheese"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cream"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HotBeverage"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#IceCream"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Juice"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Milk"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Water"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Yogurt"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#AlcoholicBeverage"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#HotBeverage"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Juice"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Water"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Apple"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Avocado"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Banana"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CitrusFruit"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Mango"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pear"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pineapple"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Basket"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#BookRack"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Box"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drawer"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TrashContainer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Beef"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chicken"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Fish"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lamb"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pork"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#BindingEvent"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Labeling"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Packing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Bread"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cereal"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cracker"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Noodle"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pancake"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Popcorn"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Rice"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Carrot"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Onion"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pepper"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Potato"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tomato"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DairyProduct"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FruitOrVegetableFood"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MeatOrLegumeFood"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CerealFood"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Drink"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FruitOrVegetableFood"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MeatOrLegumeFood"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Chocolate"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Coffee"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Tea"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#CookingVessel"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingVessel"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#EatingVessel"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#FoodStorageContainer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Cup"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingBottle"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DrinkingGlass"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#DeepFrier"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PancakeMaker"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Pot"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#GermanFood"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#MexicanFood"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#RussianFood"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#GrapeFruit"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lemon"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Lime"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Orange"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Hearing"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#TouchPerception"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#VisualPerception"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Ketchup"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Mayonnaise"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Mustard"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#PepperCondiment"/>
+            <rdf:Description rdf:about="http://www.chalmers.se/ontologies/ssy236Ontology.owl#Salt"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

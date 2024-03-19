@@ -1,0 +1,9 @@
+# Name of the target object. You can use "all" to get all the objects in the scene.
+string object_name
+---
+# true if the target object was in the list
+bool obj_found
+# Target object, it could be one object or all the objects.
+string[] objects
+# Message in case of error
+string message

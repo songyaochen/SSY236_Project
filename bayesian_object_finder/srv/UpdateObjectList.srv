@@ -1,0 +1,6 @@
+# New Object for the list
+geometry_msgs/Pose object_pose
+string object_name
+
+---
+bool confirmation

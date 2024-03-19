@@ -1,0 +1,26 @@
+<launch>
+
+    <include file="$(find bayesian_object_finder)/launch/tiago_navigation.launch">
+        <arg name="public_sim" value="true"/>
+        <arg name="global_planner" value="navfn"/>
+    </include>
+
+    <node pkg="tf" type="static_transform_publisher" name="StaticTransformation" args="0 0 0 0 0 0 /odom /world 100"/>
+
+    <!-- Start map generator node -->
+    <node pkg="bayesian_object_finder" name="map_generator" type="map_generator_node" output="screen"/>
+
+    <!-- Start perception node -->
+    <node pkg="bayesian_object_finder" name="perception_node" type="percept_node" output="screen"/>
+
+    <!-- Start reasoning node -->
+    <node pkg="bayesian_object_finder" name="reason_node" type="reasoning_node" output="screen"/>
+
+    <!-- Start object locator node -->
+    <node pkg="bayesian_object_finder" name="object_locator_node" type="object_locator_node.py" output="screen">
+        <env name="PYTHONPATH" value="$(env PYTHONPATH):$(find bayesian_object_finder)/src/"/>
+    </node>
+
+    <include file="$(find bayesian_object_finder)/launch/reasoning.launch"/>
+
+</launch>

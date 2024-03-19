@@ -1,0 +1,4 @@
+# Initial Tiago Pose wrt gazebo world (ground_plane)
+geometry_msgs/Pose tiago_pose
+---
+bool confirmation

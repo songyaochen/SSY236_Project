@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+ <!-- rosprolog for storing & providing ontology services -->
+  <param name="initial_package" type="string" value="bayesian_object_finder" />
+  <node name="rosprolog" pkg="rosprolog" type="rosprolog_node" output="screen"/>
+
+</launch>
