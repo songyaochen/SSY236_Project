@@ -23,6 +23,12 @@ Watch the demonstration video： https://youtu.be/jShlLz6bswQ
 
 The project is mostly contained in the `bayesian_object_finder` ROS package. Some helper packages are also available in this repository such as the world the simulation is in. Some of the launch files used for the Tiago robot is moved to this repository due to the need for some small changes.
 
+## Architecture of this ROS package/Project
+
+<p float="left">
+  <img src="Images/architecture.png" width="85%" /> 
+</p>
+
 ## Cloning this repo
 
 To clone this repo, choose the workspace you want to store the repository in, then clone this repository within the `src` folder.
