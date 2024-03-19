@@ -26,7 +26,7 @@ The project is mostly contained in the `bayesian_object_finder` ROS package. Som
 ## Architecture of this ROS package/Project
 
 <p float="left">
-  <img src="Images/architecture.png" width="85%" /> 
+  <img src="Images/architecture.png" width="35%" /> 
 </p>
 
 ## Cloning this repo
