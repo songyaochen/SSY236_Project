@@ -34,7 +34,7 @@ The expected pipeline is shown in the image below:
 The project is mostly contained in the `bayesian_object_finder` ROS package. Some helper packages are also available in this repository such as the world the simulation is in. Some of the launch files used for the Tiago robot is moved to this repository due to the need for some small changes.
 
 ## Architecture of this ROS package/Project
-<img src="Images/architecture.png" height="55%" width="55%">
+<img src="Images/architecture.png" height="55%" width="35%">
 <p float="left">
   <img src="Images/architecture.png" width="35%" /> 
 </p>
