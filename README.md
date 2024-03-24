@@ -17,7 +17,7 @@ The project is to use a probabilistic classifier and logic to navigate towards a
   </p>
 </div>
 
-The expected pipeline is shown in the image below:
+The expected pipeline is shown in the image below: //
 ![this is state space model](./Images/pipeline_ssy236_final_project.png)
 
 
