@@ -11,7 +11,7 @@ The project is to use a probabilistic classifier and logic to navigate towards a
 
   <p align="center">
     <br />
-    <a href="./docs/">Explore the docs</a>
+    <a href="./SSY236_presentation_group2.pptx">Explore the docs</a>
     ·
     <a href="https://youtu.be/jShlLz6bswQ">View Demo</a>
   </p>
