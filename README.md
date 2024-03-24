@@ -20,16 +20,6 @@ The project is to use a probabilistic classifier and logic to navigate towards a
 
 
 
-![](Images/pipeline_ssy236_final_project.png)
-
-</p> 
-Watch the demonstration video： https://youtu.be/jShlLz6bswQ
-</p>
------ You can click on the image directly to jump to the video interface.
-
-[![Watch the video](https://img.youtube.com/vi/jShlLz6bswQ/maxresdefault.jpg)](https://youtu.be/jShlLz6bswQ)
-
-
 1. The robot recieves an object that the user wishes it would find.
 2. The robot uses its knowledge base and logic defined in Protege and Prolog to determine what type of thing the object is, and list of possible places it can be found.
 3. The robot then uses a Bayesian classifier to determine which of these places are most likely to be the actual place it is.
