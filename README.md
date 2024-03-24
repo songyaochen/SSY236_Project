@@ -5,7 +5,7 @@ The project is to use a probabilistic classifier and logic to navigate towards a
 <br />
 <div align="center">
   <a href="">
-    <img src="Images/cocktail_bot-logo.png" alt="Logo" width="900">
+    <img src="Images/cocktail_bot-logo.png" alt="Logo" width="1000">
   </a>
 
 
