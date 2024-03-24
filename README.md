@@ -18,7 +18,7 @@ The project is to use a probabilistic classifier and logic to navigate towards a
 </div>
 
 The expected pipeline is shown in the image below:
-![this is state space model](./picture/carla_simulation.png)
+![this is state space model](./Images/pipeline_ssy236_final_project.png)
 
 
 1. The robot recieves an object that the user wishes it would find.
