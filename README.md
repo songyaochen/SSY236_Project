@@ -1,6 +1,24 @@
 # SSY236 Final Project - Group 2: Robot Navigation Based on a Bayesian Classifier
 
 The project is to use a probabilistic classifier and logic to navigate towards an object and find them. The expected pipeline is shown in the image below:
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="">
+    <img src="images/cocktail_bot-logo.png" alt="Logo" width="300">
+  </a>
+
+
+  <p align="center">
+    <br />
+    <a href="./docs/">Explore the docs</a>
+    ·
+    <a href="https://youtu.be/jShlLz6bswQ">View Demo</a>
+  </p>
+</div>
+
+
+
 
 ![](Images/pipeline_ssy236_final_project.png)
 
